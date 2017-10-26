@@ -12,7 +12,7 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 # add libs
 RUN yum -y install epel-release
 RUN rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
-RUN yum -y install —enable-repo=nux-dextop,epel gcc libjpeg-turbo-devel ffmpeg-devel
+RUN yum -y install —enable-repo=nux-dextop,epel git gcc libjpeg-turbo-devel ffmpeg-devel
 
 # install glide
 RUN yum -y install which
